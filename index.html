@@ -88,19 +88,31 @@
 </div>
 
 <!-- PORTFOLIO SECTION -->
-<div class="container" id="portfolio">
-    <h2>🔥 Portfolio / Contoh Website</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px;">
-        <img src="https://i.postimg.cc/ppPjvLWN/Screenshot-2025-12-02-142700.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/xcG7dP6z/THWk-AET244XTm-GGYh6EC3w-Hhxf-E4Mu-Uz-CLXTn-XSi.jpg" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/nXD9Yj2y/Screenshot-2025-12-02-142714.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/fSVRzprt/Screenshot-2025-12-02-142738.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/Rq2M1PYQ/Screenshot-2025-12-02-142759.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/Xpw0fndv/Screenshot-2025-12-02-142819.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/tYzMRJFp/Screenshot-2025-12-02-142836.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/5HQgz2Qr/Screenshot-2025-12-02-142905.png" style="width:100%; border-radius:10px;">
-        <img src="https://i.postimg.cc/V5f7G133/Screenshot-2025-12-02-142919.png" style="width:100%; border-radius:10px;">
-    </div>
+<div class="grid-container" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; padding:20px;">
+    <img src="https://i.postimg.cc/ppPjvLWN/Screenshot-2025-12-02-142700.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/xcG7dP6z/THWk-AET244XTm-GGYh6EC3w-Hhxf-E4Mu-Uz-CLXTn-XSi.jpg" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/nXD9Yj2y/Screenshot-2025-12-02-142714.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/fSVRzprt/Screenshot-2025-12-02-142738.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/Rq2M1PYQ/Screenshot-2025-12-02-142759.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/Xpw0fndv/Screenshot-2025-12-02-142819.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/tYzMRJFp/Screenshot-2025-12-02-142836.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/5HQgz2Qr/Screenshot-2025-12-02-142905.png" style="width:100%; border-radius:10px;">
+    <img src="https://i.postimg.cc/V5f7G133/Screenshot-2025-12-02-142919.png" style="width:100%; border-radius:10px;">
+</div>
+
+<style>
+.grid-container img{
+    transition: transform 0.3s;
+}
+.grid-container img:hover{
+    transform: scale(1.05);
+}
+@media(max-width:600px){
+    .grid-container{
+        grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+</style>
 </div>
 
 <!-- ADD-ON SERVICES -->
@@ -161,5 +173,6 @@
 </body>
 
 </html>
+
 
 
